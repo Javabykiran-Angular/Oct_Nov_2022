@@ -1,0 +1,82 @@
+			Welcome To Angular Module 12
+				  Sumit Raokhande
+
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc , Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Live android application prasieo,autohub,garage
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker 
+
+
+- daily monday to friday 
+- avg time duration 1.15/1.30 it depends upon the topic 
+- daily doubt solving on same session 10 min or before session 10 min 
+- duration appr. 55 hr to 58 hr including project
+- we perform angular project as well 
+- we make final build of the project and we can upload as server as well 
+- all code will be given & any soft copy notes will be given whenever i showed in a session except images 
+- all recording will given but that recording is not downloadable
+- that recording is available on cloud for maximum 4 days
+- daily paractise is required 
+- two way communication required
+- all question bank will given 
+
+ What i want from ur side
+ 1 all knows OOPS Concept
+ 2 All knows Basics of html & css
+ 3 daily attendance & practice. 
+ 
+  first i will teach upload
+	1 typescript (how to js is used in typescript)
+	2 angular 
+			
+ 1 github
+ 2 bitbucket
+ 3 gitlab 
+ 
+
+	back end project  
+	- Employee & country entity class
+	- emp & country has one to one mapping 
+	- emp => table 
+		1 id => auto increment
+		2 name
+		3 department
+		4 status=> 1 active 2 inactive 3 suspend
+		5 mobile no.
+		6 email id
+		7 createddate => date filed 
+		8 createdby
+		9 updated date => date filed 
+		10 updated by 
+		11 Country object => one to one mapping
+	- country => table
+		cid =>auto increment
+		cname => country name 
+		
+	10  api 
+	1 addcountry => return type string 
+	2 upadtecountry => return type string 
+	3 delete country => return type string 
+	4 get all country => country list 
+	5 add emp => return type string 
+	6 upadte emp => return type string 
+	7 delete emp => return type string 
+	8 get all emp => emp list
+	9 getparticularEmpby id =>return type emp object 
+	10 getparticular Country by id =>return type country object 
+
+
+
+
+
+
+
+
+
