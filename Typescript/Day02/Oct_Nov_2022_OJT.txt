@@ -1,0 +1,63 @@
+Last Lecture
+	1 Introduction
+
+	back end project  
+	- Employee & country entity class
+	- emp & country has one to one mapping 
+	- emp => table 
+		1 id => auto increment
+		2 name
+		3 department
+		4 status=> 1 active 2 inactive 3 suspend
+		5 mobile no.
+		6 email id
+		7 createddate => date filed 
+		8 createdby
+		9 updated date => date filed 
+		10 updated by 
+		11 Country object => one to one mapping
+	- country => table
+		cid =>auto increment
+		cname => country name 
+		
+	10  api 
+	1 addcountry => return type string 
+	2 upadtecountry => return type string 
+	3 delete country => return type string 
+	4 get all country => country list 
+	5 add emp => return type string 
+	6 upadte emp => return type string 
+	7 delete emp => return type string 
+	8 get all emp => emp list
+	9 getparticularEmpby id =>return type emp object 
+	10 getparticular Country by id =>return type country object 
+
+Today Lecture
+1 Software setup
+2 Difference between Angular Js Vs Angular 12 
+	or 
+  Difference between js vs ts 
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
