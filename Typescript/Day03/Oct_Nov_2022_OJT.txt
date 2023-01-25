@@ -1,0 +1,41 @@
+Last Lecture
+1 Software setup
+2 Difference between Angular Js Vs Angular 12 
+	or 
+  Difference between js vs ts 
+  
+  - it is object based lang / object orientated lang
+  - js based freamwork / typescript
+  - MVC pattern / MVW pattern
+  - moemory is not efficiently manage / memory is mangae
+  - performance degrade / performance is increased
+  - mobile commnunity is not supported / mobile commnunity supported
+  
+Today Lecture
+1 What is Angular Freamwork
+2 Why we used Angular?
+3 What is SPA Application?
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
