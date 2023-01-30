@@ -1,0 +1,49 @@
+Last Lecture
+1 What is Angular Freamwork
+	- it is frontend technology
+	- react js,vue js ,...
+2 Why we used Angular?
+	- MVW arch
+	- it provides template declaration,module,services ,DI ,ened to end tooling,
+	- equal role for testing & writing 
+	- it is universal freamwork
+	- one freamwork to all 
+	- it support cross platform 
+	- speed & performance
+	- it is code splitting
+	- in build cli 
+3 What is SPA Application?
+	- application has only 1 head & 1 body 
+	- index.html
+	- it provides spa envir
+	- no page reload & no extra wait time 
+
+Today Lecture
+1 What is typescript?
+2 vs code overview
+3 Simple program
+4 variable
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
