@@ -1,0 +1,37 @@
+Last Lecture
+1 What is typescript?
+	- it is superset of js 
+	- it is oops orientated
+	typescript= ecma script standard + ecma script version + additional features 
+	advntages
+	1 strong static typing 
+	2 compile time error 
+	3 oops concept support
+	disadvntage
+	1 browser does not understand 
+		tsc => typescript compiler 
+		it transcompile ur ts file to js file 
+	2 compiler is slow down 
+	
+2 vs code overview
+	
+3 Simple program
+	demo1.ts
+	console.log("Hello World");
+	console.log('Hello World');
+	
+	tsc demo1.ts & node demo1.js
+	
+	
+4 variable
+	var a1,a2;
+	var a1_2;
+	
+
+Today Lecture
+1 Data types 
+2 literal;
+3 type assertion
+4 operators
+5 Control statement
+
