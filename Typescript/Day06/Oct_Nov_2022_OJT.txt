@@ -1,0 +1,41 @@
+Last Lecture
+1 Data types 
+	- number,string,boolean,any,void
+	- null & undefined 
+	var a:number=10;
+	var str!:string;
+	
+	var a:any;
+	a=2.5;
+	a='sumit';
+	a=true;
+	var c;
+	var d=10;
+	
+2 literal
+	var a:string|number;
+	var a:50|string;
+3 type assertion
+	any,unknown,object
+	1 angle bracket
+	
+		var a:any;
+		var temp=(<string>a);
+		temp.
+	
+	2 as syntax
+		var temp=(a as string);
+	
+4 operators
+	- airthamthic,logical,bitwise,conditional,ternary,unary,assigment
+	- ==(it checks only value )
+	-=== (it checks value as well as data type )
+5 Control statement
+	- if,if-else,switch,break,continue
+
+Today Lecture
+1 Loop statement
+2 var vs let vs const
+3 functions
+4 anonymous function
+
