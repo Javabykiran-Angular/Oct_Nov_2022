@@ -1,0 +1,55 @@
+Last Lecture
+1 Fat Arrow Function
+	let temp=()=>{
+		console.log("...")
+	}
+	
+	temp();
+	
+	let temp=(a:number,b:number):number=>{
+		return (a+b)
+	}
+	let res=temp(4,6)
+	console.log(res)
+2 optional parameter function
+	function add1(a?:number,b?:number){
+	......
+	}
+	add1(7)
+3 Default parameter function
+	function add1(a:number,b:number=10){
+	......
+	}
+	
+	add1(4,45);
+	
+	function add1(a:number=20,b?:number){
+	......
+	}
+	
+4 basics of array
+	let a:number[]=[7,8,9,10];
+	let a:number[]=[];
+	let a:any[]=[];
+	let a=[7,8,9];
+	let a=[2.5,'sumit']
+	
+	for(let i=0;i<a.length;i++){
+	....
+	}
+	
+	console.log(a);
+	
+5 join method 
+	console.log(a.join(" "));
+
+Today Lecture
+1 foreach method
+2 rest parameter function
+3 push & pop
+4 splice method 
+5 slice method 
+6 map method
+ 
+
+
