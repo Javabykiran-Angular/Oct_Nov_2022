@@ -1,0 +1,43 @@
+Last Lecture
+1 foreach method
+	a.forEach((value)=>{
+		....
+	})
+2 rest parameter function
+	function display(...item:number[]){
+		...
+	}
+	display(45,85);
+	
+	
+3 push & pop
+	let a:number[]=[];
+	a.push(78);
+	a.push(88,90);
+	let res=a.pop();
+4 splice method 
+	a.splice(2,0,50);
+	a.splice(2,0,50,45,86);
+	a.splice(2,1);
+	a.splice(1,1,100)
+	a.splice(3,1,700,800);
+	
+		
+5 slice method 
+	let temp=a.slice(1,6);
+	
+6 map method
+	let temp=a.map((value)=>{
+		return (value*value);
+	})
+
+Today Lecture
+1 destructing/derefrence of array 
+2 Shallow Copy & deep Copy (Js Interview Question)
+3 Swapping variables without using 3rd variables (Js interview Question)
+4 Functions that return multiple values (JS interview Question)
+5 Simple Json Object
+
+	
+
+
