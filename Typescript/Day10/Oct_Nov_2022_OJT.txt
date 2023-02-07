@@ -1,0 +1,68 @@
+Last Lecture
+1 destructing/derefrence of array 
+	let a=[2,4,5];
+	let [t1,t2,t3]=a;
+	...
+	let [s1,...arr]=a
+	
+2 Shallow Copy & deep Copy (Js Interview Question)
+	let a=10;
+	let b=a;
+	b=20;
+	
+	let a=[2,6,8];
+	let arr=a;
+	...
+	a[0]=45;
+	...
+	
+	let [...arr]=a;
+	
+	
+3 Swapping variables without using 3rd variables (Js interview Question)
+	let a=10;
+	let b=20;
+	[a,b]=[b,a];
+	
+4 Functions that return multiple values (JS interview Question)
+	
+		function operation(a:number,b:number){
+			return [a+b,a-b,a*b];
+		}
+		
+		let [add,sub,mul]=operation(5,3);
+		
+	
+5 Simple Json Object
+	let jsonobj={
+		id:9,
+		"fname":"Sumit",
+		lname:'raokhande'
+	}
+	
+	1 dot 
+		console.log(
+			jsonobj.id
+			jsonobj.fname
+			jsonobj.lname
+		)
+	2 square
+	
+		jsonobj["id"]
+		jsonobj['fname'];
+		....
+	
+
+Today Lecture
+1 Array of Object
+2 Additional features of typescript(OOPS concept)
+3 Class,object,property
+4 method
+5 constructor
+6 access specifier
+7 access same package
+8 access in different package
+
+	
+
+
