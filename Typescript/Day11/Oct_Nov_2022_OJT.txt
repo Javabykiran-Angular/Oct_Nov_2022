@@ -1,0 +1,102 @@
+Last Lecture
+1 Array of Object
+	arrobj=[
+		{
+			id:9,
+			fname:'Sumit',
+			lname:'Raokhande',
+			country:{
+				cid:1,
+				cname:'India'
+			},
+			month:[".."],
+			result:[
+				{
+					subj:"m1",
+					marks:45
+				}
+			]
+		},
+		{},
+		{}
+	]
+	
+	for(let i=0;i<arrobj.length;i++){
+		console.log(`
+			Id: ${arrobj[i].id}
+			...
+			Country :: ${arrobj[i].country.cname}
+			Month: ${arrobj[i].month.join("  ")}
+		`)
+		
+		arrobj[i].result.forEach((myvalue)=>{
+			console.log("Subject "+myvalue.subj)
+			console.log("Marks "+myvalue.marks)
+		})
+		
+	}
+	
+2 Additional features of typescript(OOPS concept)
+3 Class,object,property
+
+	export class Myclass{
+		public id:number;
+		private fname:string;
+		protected 
+		...
+		
+		constructor(id:number,f:string,l:string){
+			this.id=id;
+			this.fname=f;
+			...
+		}
+		
+		display(){
+			console.log(`
+				id :: ${this.id}
+				First name :: ${this.fname}
+				..
+			`)
+		}
+	}
+	
+	export function add1(a:number,b:number){
+		return (a+b)
+	}
+	
+	export const pi=3.14;
+	
+	let obj=new Myclass(9,'Sumit','Raokhande');
+	obj.display();
+	
+	demo2.ts
+	
+	import {Myclass,add1,pi} from './demo1'
+	
+	let obj=new Myclass(6,'');
+	obj.display()
+	....
+	...
+	
+	myfolder
+		demo4.ts
+	import {Myclass} from '../day10/demo1';
+	
+	.....
+	
+4 method
+5 constructor
+6 access specifier
+7 access same package
+8 access in different package
+
+Today Lecture
+1 Inheritance
+2 Method Override
+3 Interface
+4 Composition/contentment/has a relationship
+
+
+	
+
+
