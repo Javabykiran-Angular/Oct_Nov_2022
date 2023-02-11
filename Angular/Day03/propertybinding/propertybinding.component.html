@@ -1,0 +1,44 @@
+<p>propertybinding works!</p>
+
+    <!-- - it binds a property to any attributes(html/directive/custom attribute) dynamically 
+    syntax => [attribute name]="propertyname"
+        - u can apply on all atrributes        
+    -->
+
+ 
+    <input type="text" [value]="name" placeholder="Enter the name "> <br><br>
+
+    <img [src]="imgUrl" alt="" style="width: 250px;height: 250px;"> <br><br>
+
+    <!-- <table border="1px">
+        <tr>
+            <td colspan="2">one</td>
+        </tr>
+        <tr>
+            <td>Two</td>
+            <td>Three</td>
+        </tr>
+    </table> -->
+
+
+    <table border="1px">
+        <tr>
+            <td [attr.colspan]="mycolSpan">one</td>
+        </tr>
+        <tr>
+            <td>Two</td>
+            <td>Three</td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>
+        Difference between String Interpolation & property Binding
+    </h2>
+
+    <div hidden=" {{isHidden}} ">
+        Display Text using String Interpolation
+    </div>
+
+    <div [hidden]="isHidden">
+        Display Text using Property Binding
+    </div>

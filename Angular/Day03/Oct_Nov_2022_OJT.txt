@@ -1,0 +1,87 @@
+Last Lecture
+1 Angular Arch Overview
+	- component 
+		1 view file => .html => only one => to render the web element/html element
+		2 stylesheet file => .css => one or more => to apply css stylesheet
+		3 component file => .ts => only one => to apply a presentation logic(PL) 
+	 	4 testing   => spec.ts	
+	- meta data 
+		it provideds the extra innformation component 
+		@Component({
+			....
+		})
+		
+	- data binding
+		- data flow from .ts file to view file 
+		1 string interpolation
+		2 property binding
+		3 Style binding
+		4 class binding
+	- event binding
+		- data/request flow from view file to component file 
+			click,change,keyboard,mouse ...
+	- directive 
+		- it can change the behaviour of view using directive
+		ngStyle,ngClass,ngModel,
+		1 attribute
+		2 structural directive
+		3 component directive
+	    4 event directive
+	- app Module
+		1 declaration
+			- we register our component
+				
+		2 import
+			- import module 
+		3 service
+			- it is simple class 
+			- it is used write BL 
+			- to register service 
+			it has provider
+		4 routing
+			- it navigate ur component
+	- injector
+		- u can inject 3rd party services 
+		- angular inbuild services inject 
+
+2 Application Flow in Angular 
+3 Create component manually
+	employee
+	employee.component.ts
+		
+		@Component({
+			selector:'app-employee',
+			templateUrl:'./employee.component.html',
+			StyleUrls:['./employee.component.css']
+		})
+		export class EmployeeComponent{}
+	employee.component.html
+		.....
+	employee.component.css
+	
+	
+	app.module.ts
+	declaration:[
+	EmployeeComponent
+	]
+	
+	app.component.htl
+	<app-employee>
+	
+	
+4 Create component through cli
+	ng g c student
+	
+	employee.component.html
+	<app-student>
+
+Today Lecture
+1 data binding
+	- data flow from component file to view file 
+	
+2 String interpolation
+3 Property Binding
+4 difference between string interpolation & property Binding
+	
+
+

@@ -1,0 +1,13 @@
+img{
+    width: 350px;
+    height: 250px;
+}
+
+#myid{
+    color: red;
+}
+
+.myclass{
+    color: red;
+    text-transform: uppercase;
+}
