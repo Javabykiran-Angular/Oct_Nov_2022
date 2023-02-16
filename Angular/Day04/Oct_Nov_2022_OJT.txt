@@ -1,0 +1,53 @@
+Last Lecture
+1 data binding
+	- data flow from component file to view file 
+	
+2 String interpolation
+	
+	 <h2> {{name}}</h2>
+	 <h2> {{"welcome "+name}}</h2>
+	 <h2> {{num1+num1}}</h2>
+	 <img src=" {{imgUrl}} "
+
+	.ts file
+	name:string='...';
+	num1:number=5;
+	imgUrl:string='../../assets/bg4.jpg';
+	
+3 Property Binding
+	- html attribute/directive attribute/custom attribute
+	
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	<table >
+		<tr>
+			<td [attr.colspans]="colCount">one
+			</tr>
+		<tr> 
+			<td> two</td>
+			<td> three</td>
+		</tr>
+	
+	.ts
+	name:string='....';
+	imgUrl:string='../../assets/bg4.jpg';
+	colCount:number=2;
+		
+		
+4 difference between string interpolation & property Binding
+	<div hidden=" {{ishidden}} ">
+	jkfhsdkjf
+	
+	<div [hidden]="ishidden">
+	jkfhsdkjf
+	
+	.ts 
+	ishidden:boolean=false;
+
+Today Lecture
+1 Style Binding
+2 Class Binding
+	
+
+
