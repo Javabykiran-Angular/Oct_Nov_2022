@@ -1,0 +1,40 @@
+Last Lecture
+1 Style Binding
+	<h2 [style.color]="mycolor" > ...
+	<h2 [style.color]="rating<4?'red':'green'">....
+	<div [ngStyle]="jsonObj">...
+	.ts file
+	
+	mycolor:string='red';
+	rating:number=21;
+	jsonObj={
+		color:'blue',
+		fontFamily:..,
+		'font-size':...
+	}
+2 Class Binding
+	<h2 [class]="myclass">
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4"
+		>
+	
+	<div [ngClass]="jsonObj">
+	
+	.ts file
+	myclass:string='success';
+	isSpecial:boolean=true;
+	jsonObj={
+		'success':!this.iserror,
+		'danger' : this.iserror,
+		'special':this.isSpecial
+	}
+
+Today Lecture
+1 Event Binding
+	- data/request flow from view file to component file 
+	click event 
+2 $event
+3 template refr. variable
+	
+
+

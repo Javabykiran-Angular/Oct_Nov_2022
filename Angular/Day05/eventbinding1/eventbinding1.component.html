@@ -1,0 +1,32 @@
+<p>eventbinding1 works!</p>
+
+<!-- syntax
+    (eventname)="eventHandler"
+    - eventHandler is ur custom method 
+    - It work on all html tags
+
+-->
+
+<button (click)="onClick()">click</button><br><br>
+
+<img class="myimg" (click)="onImage()"
+src="../../assets/bg4.jpg" alt=""> <br><br>
+
+<!-- $event
+    - It is special variable given by angular
+    - it gives current dom element information
+    - u can only access any information of element but u can not manipulate that information 
+    - u can apply all html tags 
+-->
+
+    <button value="Doller event occur!!" (click)="onSend($event)" >Send</button>
+<hr>
+<!-- template reference variable
+    - u can access as well as manipulate the data/behavoiur of html element
+    #uniquename
+-->
+
+<input type="text" placeholder="Enter the name" #inputname> <br><br>
+<button (click)="onSend1(inputname)" >Send1</button><br><br>
+<input type="text" placeholder="Enter the name" #inputname1> <br><br>
+<button (click)="onSend2(inputname1.value)" >Send1</button><br><br>
