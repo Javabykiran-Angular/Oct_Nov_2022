@@ -1,0 +1,35 @@
+<p>eventbinding2 works!</p>
+
+<!-- <label for=""> Num1:: &nbsp;&nbsp;</label>
+<input #num1 type="text" placeholder="Enter the Number1"><br><br>
+<label for=""> Num2:: &nbsp;&nbsp;</label>
+<input #num2 type="text" placeholder="Enter the Number2"><br><br>
+<button (click)="onAddition(num1.value,num2.value)" >Addition</button> <br><br>
+<input type="text" [value]= "result" placeholder="Result...">
+<hr>
+
+<input type="text" (change)="onChange()" placeholder="Change Event..."> -->
+
+<!-- 
+<input type="text" placeholder="Key up event" (keyup)="onKeyUp()" > <br><br>
+
+<input type="text" placeholder="Key Down event" (keydown)="onKeyDown()"> <br><br>
+
+<input type="text"  (keyup.enter)="onEnterKeyUp()"
+placeholder="Keyboard filtering for enter key "> -->
+
+<!-- <button (click)="res=5+5" >Addition</button> 
+<h2> {{res}} </h2> -->
+
+<!-- ngModel 
+    - It is attribute directive
+    - U can apply any html tags
+    - pre-requiest
+       to import FormsModule=> app.module.ts=> import 
+    - syntax
+        [()]=> bannan in the box noattion
+        [(ngModel)]="propertyname"
+-->
+
+<input type="text" placeholder="Enter the Name " [(ngModel)]="name" > {{name}}
+

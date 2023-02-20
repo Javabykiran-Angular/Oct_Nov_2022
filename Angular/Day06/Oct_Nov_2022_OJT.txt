@@ -1,0 +1,63 @@
+Last Lecture
+1 Event Binding
+	- data/request flow from view file to component file 
+	click event 
+	<button (click)="onclick()">
+	
+	.ts file
+	count:number=0;
+	onclick(){
+	if(this.count==0){
+		console.log("....");
+		this.count++;
+	}
+	
+	}
+	
+	<img src=".." (click)="onimageClick()"
+	
+	.ts file 
+	
+	onimageClick(){
+	...
+	}
+2 $event
+	<button value="doller event " (click)="onclick($event)">
+	.ts 
+	onclick(myevent:any){
+		console.log(myevent)
+		myevent.target.value
+	}
+3 template refr. variable
+<input #inputname>
+<button (click)="onclick(inputname)">
+	
+	.ts file
+	onclick(myname:any){
+		....
+		myname.value
+		myname.style.backaground='green'
+		myname.tyle.color='white';
+	}
+	
+	<input #inputname>
+<button (click)="onclick(inputname.value)">
+.ts file
+onclick(myvalue:any){
+	....
+}
+
+Today Lecture
+1 Real time Example
+2 change event 
+3 keyboard event
+	1 keyup
+	2 keydown
+4 keyboard filtering
+	
+5 event binding without event Handler
+6 Two way Binding
+	
+	
+
+
