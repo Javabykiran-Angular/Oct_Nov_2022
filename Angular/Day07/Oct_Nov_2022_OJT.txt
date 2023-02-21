@@ -1,0 +1,51 @@
+Last Lecture
+1 Real time Example
+	<input #num1>
+	<input #num2>
+	<button (click)="onAddition(num1.value,num2.value)">
+	<input [value]="result" >
+	
+	.ts file
+	
+	onAddition(num1:any,num2:any){
+		let n1=+num1;
+		..
+		this.result=n1+n1;
+	}
+2 change event 
+	<input (change)="onChange()">
+	
+	.ts file 
+	onChange(){
+	...
+	}
+3 keyboard event
+	1 keyup
+		<input (keyup)="onKeyup()"
+	2 keydown
+		<input (keydown)="onKeyDown()">
+4 keyboard filtering	
+	<input (keyup.enter)="onEnterKey()">
+5 event binding without event Handler
+		<button (click)="result=5+5">
+		{{result}}
+6 Two way Binding
+	<input [(ngModel)]="name">
+	
+
+Today Lecture
+1 Structural Directive
+	- u can manipulate (show/hide/change) of ur structure
+	1 *ngIf => if u want to check condition 
+	2 *ngFor => if u want iterate dynamically
+	3 *ngSwitch => if u want execute a specific case then go for *ngSwitch
+2 if directive
+<ng-template> => component directive
+3 for directive
+4 mouse event 
+	1 mouseover
+	2 mouseout 
+	
+	
+
+
