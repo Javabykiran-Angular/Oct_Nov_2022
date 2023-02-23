@@ -1,0 +1,43 @@
+Last Lecture
+1 switch directive
+	<input #inputcolor>
+	<button (click)="onSend(inputcolor.value)">
+	
+	<div [ngSwitch]="choice">
+		<div *ngSwitchCase="'red'" 
+			[style.background]="choice">...
+		
+		...
+		
+		<div *ngSwitchDefault 
+			[style.background]="choice==''?'black':'orange'">
+		>...
+	
+	.ts file
+	
+	onSend(colorname:string){
+		this.choice=colorname.toLowerCase().trim();
+	}
+2 real time example
+	<input [type]="isShow?'password':'text'">
+	<button (click)="isShow=!isShow">
+	
+	.ts 
+	isShow:boolean=true;
+
+Today Lecture
+1 Component Interaction
+	- u can send data(string/number/bbolean/any/json/array of object/array) from one component to another component
+	pre-requiest
+	
+	parent-child relationship establish 
+	
+2 @Input()
+
+
+Home work task
+To send array of object from parent to child 
+	
+	
+
+

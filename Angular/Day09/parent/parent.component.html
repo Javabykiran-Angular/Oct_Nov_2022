@@ -1,0 +1,14 @@
+<p>parent works!</p>
+
+<input #inputname type="text" placeholder="Enter the name">&nbsp;&nbsp;
+<button (click)="onSend(inputname.value)" >Send</button> <br><br>
+
+<input type="date" [(ngModel)]="mydate" >
+
+<hr>
+<app-child1 [ParentStrData]="strdata" 
+            [ParentJsonData]="jsonObj"
+            [ParentCourse]="CourseData"
+            [ParentName]="nameData"
+            [ParentDate]="mydate"
+></app-child1>

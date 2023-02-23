@@ -1,0 +1,14 @@
+ <p>child1 works!</p>
+
+<h2> {{ParentStrData}} </h2>
+
+<h2>ID:: {{ParentJsonData.id}} </h2>
+<h2>Fname::  {{ParentJsonData.fname}} </h2>
+<h2>Lname:: {{ParentJsonData.lname}} </h2>
+
+<ol >
+    <li *ngFor="let item of ParentCourse"> {{item}} </li>
+</ol>
+<br><br>
+<h2>Name:: {{ParentName}} </h2>
+<h2> Date :: {{ParentDate}} </h2>
