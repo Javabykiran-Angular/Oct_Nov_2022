@@ -1,0 +1,51 @@
+Last Lecture
+1 Component Interaction
+	- u can send data(string/number/boolean/any/json/array of object/array) from one component to another component
+	pre-requiest
+	
+	parent-child relationship establish 
+	
+2 @Input()
+	- to send data from parent to child 
+	
+	app.component.html
+	<app-parent>
+	
+	parent.html
+	<input #inputname>
+	<button (click)="onSend(inputname.value)"
+	
+	<app-child1 [parentstrData]="strdata"
+				[parentjsondata]="json"
+				[parentname]="name">
+	
+	parent.ts
+	strdata:string='...';
+	json={
+	...
+	}
+	name:String
+	
+	onSend(myname:any){
+	
+		this.name=myname;
+	}
+	
+	child1.ts
+	@Input() parentstrData:string='';
+	@Input() parentjsondata:any={};
+	
+	child1.html
+	<h2> {{parentstrData}}
+	
+	....
+	
+
+Today Lecture
+1 @Output()
+	- data send from child component to parent component
+	
+	
+	
+
+
