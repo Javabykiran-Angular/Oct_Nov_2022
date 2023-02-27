@@ -1,0 +1,28 @@
+Last Lecture
+1 @Output()
+	- data send from child component to parent component
+	
+	child2.ts
+	<button (click)="onClick()">
+	.ts
+	@Output() strDataEvent=new EventEmitter();
+	@Output() ArrDataEvent=new EventEmitter();
+	onClick(){
+		this.strDataEvent.emit(this.strdata);
+		this.ArrDataEvent.emit(this.arrdata);
+	}
+	parent1.ts
+	<h2> {{datareceived}}<h2> 
+	
+	<app-child2 (strDataEvent)="datareceived=$event"
+				(ArrDataEvent)="arrdata=$event"	>
+	
+Today Lecture
+1 View Child
+	1 U can access parent view Element in parent ts file 
+	2 U can access child property as well as child method in parent
+	
+	
+	
+
+
