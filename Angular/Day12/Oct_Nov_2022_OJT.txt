@@ -1,0 +1,55 @@
+Last Lecture
+1 View Child
+	1 U can access parent view Element in parent ts file 
+	
+		<div #mydiv>
+		...</div>
+		
+		parent.ts
+		@ViewChild('mydiv') divelement!:ElementRef<HTmlDivLelement>;
+		
+		interface=> AfterViewInit
+		
+		ngAfterViewInit(){
+			this.divelement.nativeElement.className='';
+			this.divelement.nativeElement.ClassNameList.add("..",'ggg');
+			
+		}
+		parent.html
+		 
+		 <div class="maindiv">
+			<div> <button (click)="onProperty()">
+			<button (click)="onMethod()">
+			<div> <app-child3></div>
+			</div>
+		
+		parent.ts
+		
+		@ViewChild(Child3Component) childaccess!:Child3Component;
+		
+		onProperty(){
+			this.childaccess.username='';
+		}
+		onMethod(){
+			this.childaccess.onAlert();
+		}
+		
+	2 U can access child property as well as child method in parent	
+	child.html
+	<button (click)="onAlert()">
+	
+	child.ts
+	username:string='default value';
+	onAlert(){
+		alert(this.username)
+	}
+	
+Today Lecture
+1 Pipe
+	- it transform ur data to end user without chnaging its original value 
+2 Inbuild pipe	
+	
+	
+	
+
+
