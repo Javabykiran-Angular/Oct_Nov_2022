@@ -1,0 +1,43 @@
+Last Lecture
+1 Custom Pipe
+2 pure pipe
+3 impure pipe => ur data is non deterministic format
+4 PipeTransform=> transform method 	
+
+	@Pipe({
+		name:'summary',
+		pure:false
+	})
+	export class SummaryPipe implemnets PipeTransform{
+		transform(value:any,strat:number=0,end:number=15){
+			let temp=(<string> value);
+			
+			
+			return (temp.substring(start,end)+"..")
+			
+		}
+	}
+	
+	custompipe.html
+	
+	h2 > {{strdetails | summary:0:20}}
+	
+	app.module.ts
+	declaratipon:[
+	SummaryPipe
+	]
+
+Today Lecture
+1 Service
+	- It is simple class 
+	- it is used to write ur business logic 
+	- It is code maintability
+	- It is code resualbility
+	- It is provide isolation to the component 
+	- it is used for backend connection 
+2 Dependancy Injection
+	
+	
+	
+
+
