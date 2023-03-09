@@ -1,0 +1,132 @@
+Last Lecture
+1 Http Protocol
+	- it is set of rule 
+	- it is stateless protocol
+2 Http Method
+	1 get => to fetch a data from backend server to frontend server 
+	2 post => to send data from front end server to backend server 
+	3 put => to update a data 
+	4 delete => to delete a data 
+3 Http parts
+	http request/http response 
+	
+	http request
+		1 http header 
+			- url
+			- http method
+			- ip address
+			- date
+			- content Type
+				- pdf
+				- json
+				- image
+				- doc
+				- text
+			- auth token 
+			...
+			
+		2 http body
+			- data => 
+				json 
+				xml parsing
+				text/html 
+				
+	http response
+		1 http header 
+			- url
+			- http method
+			- ip address
+			- date
+			- content Type
+				- pdf
+				- json
+				- image
+				- doc
+				- text
+			- auth token 
+			...
+			- status code 
+				1 2xx => success,ok 
+				2 3xx => for redirection message
+				3 4xx => for error=> client side error  
+				4 5xx => for server side 
+			
+		2 http body
+			- data => 
+				json 
+				xml parsing
+				text/html 
+	
+	
+4 https://jsonplaceholder.typicode.com/posts 
+	- it is fake url/service 
+		because it can not store ur data(post)/update/delete into db but it gives a response of ur request 
+	module=> HttpClientModule=> app.module.ts
+	
+	ng g s http 
+	
+	@Injectable({
+		provideIn:"root"
+	})
+	class HttpService{
+	url:string='...'
+	
+		constructor(private http:HttpClient){}
+		
+		
+		getPost(){
+			return this.http.get(this.url);
+		}
+		postdata(obj:any){
+return 			this.http.post(this.url,obj)
+		}
+		
+	}
+	
+	post.ts
+	constructor(private service:HttpService){}
+	
+	ngOninit(){
+	this.getPost()
+	}
+	getPost(){
+		this.service.getPost()
+		.subscribe((response:any)=>}{
+		....
+		...
+		})
+	}
+	
+	post.html
+	<input #title>
+	<input #body>
+	<button (click)="onSend(title.value,body.value)">
+	
+	.ts file
+	
+	onSend(title,body){
+		let obj={
+		title:title,
+		body:body
+		}
+		
+		this.service.PostData(obj)
+		.subscribe((response)=>{
+		.....
+		})
+	}
+	
+5 @Injectable
+6 Observable
+7 get request
+8 Post Request
+
+Today Lecture
+1 Put request
+2 delete request
+3 error handling
+	
+	
+	
+
+
