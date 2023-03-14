@@ -1,0 +1,78 @@
+Last Lecture
+1 Send query parameter
+	home.ts
+	jsonobj={
+	...
+	}
+	
+	<a routerLink="/.." [queryParams]="jsonobj">
+	
+	
+	.ts
+	constructor(private route:ActivatatedRoute){}
+	
+	GetDataFromUrl(){
+		this.route.queryParamMap
+		.subscribe((param:any)=>{
+		...
+		})
+	}
+	
+2 dynamic routing => navigate 
+	<button (click)="onPage1()">Page1
+	....
+	
+	home.ts
+	
+	constructor(private router:Router)
+	
+	onPage1(){
+		this.router.navigate(['/Page1']);
+	}
+	
+	onPage2(){
+		this.router.navigate(['/Page2',this.myid,this.myusername]);
+	}
+	
+	onqueryparam(){
+		this.router.navigate(['/queryparameter'],{
+			queryParams:this.jsonobj
+		});
+	}
+3 child routes
+	app-routing.ts
+	[
+		{
+			path:'products',childern:[
+				{
+					path:"",component:productcomponent
+				},
+				{
+					path:"mobile",....
+				}
+			]
+		}
+	]
+
+home.html
+<a routerLink="/products">
+
+products.html
+<a routerLink="mobile"	>mobile 
+
+
+
+Today Lecture
+1 Lazy Loading
+	when end user required a module then that time u have to load a particular module 
+2 Custom module/features module 
+3 create routing file
+4 modify the routing
+
+
+ 
+	
+	
+	
+
+
