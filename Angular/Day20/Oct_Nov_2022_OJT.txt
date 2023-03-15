@@ -1,0 +1,48 @@
+Last Lecture
+1 Lazy Loading
+	when end user required a module then that time u have to load a particular module 
+2 Custom module/features module 
+3 create routing file
+	ng g m user --routing
+	listuser,adduser,deleteuser,update
+		
+		user-routing.ts
+		
+		[
+			{
+				path:"",component:"list"
+			},
+			{
+				path:"add",component:"add"
+			}
+		]
+		
+		app-routing.ts
+		{
+			path:'user',loadchildern:()=>import('./user/user.module').then(m=>m.userModule)
+		}
+		
+		home.html
+		<a routerLink="/user">user
+		
+		listuse.ts
+		<a routerLink="adduser">adduser 
+		
+4 modify the routing
+home.ts
+<router-outlet>
+app.component.ts
+<app-home>
+
+Today Lecture
+1 RxJx Lib
+2 Subject
+3 BehaviouralSubject
+
+
+ 
+	
+	
+	
+
+
