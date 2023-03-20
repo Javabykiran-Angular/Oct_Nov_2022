@@ -1,0 +1,93 @@
+Sanket OJT Student
+
+Hibernate questions .
+
+1. You should know mappings.
+2. Cascading types 
+3. Difference between get() and load() method 
+4. What interfaces you used while using hibernate.
+5. Explain complete flow of database connectivity using hibernate.
+6. Difference between jdbc and hibernate db connectivity .
+7. Explain hibernate lifecycle states.
+8.difference between save() and persist() method
+9. Difference between update() and merge () method.
+10) relationship mappings between entity classes .
+11) how to write SQL queries in repository layer . OR how we can write native queries in hibernate/jpa .
+12) should have knowledge of criteria api . 
+10. What are different levels of cache provided by hibernate. How to configure 2nd level cache using hibernate. (Explain all the steps with required dependencies , classes and properties that need to be configured.)
+
+Advanced questions : 
+
+1. How to configure multiple databases in Spring Boot application.
+2) How to create composite primary key in hibernate .
+2. How do you manage transactions in hibernate .
+Manualy managing transactions is not recommended.  Try to explain how to implement @Transactional annotation .
+
+
+1) all oops concepts.
+2) Exception handling. How to create Custom exception.
+3) Object class methods (very imp - equals() , hashcode() , moderate imp - clone , wait , notify , notifyAll, toString)
+2) collections framework
+3)which data structures used for : ArrayList , linked list , hashset , hashmap , hashtable . 
+4) comparable vs comparator with deep knowledge. 
+2) internal working of hashmap .
+3. Difference between Hashmap , hashtable, concurrent Hashmap.
+4. Internal working of hashset.
+5. Difference between arraylist and linked list . 
+3) internal working of hashtable
+4) Internal working of Hashmap ? What is hash collision in hashmap ? What are new features included in hashmap in java 8 version . 
+
+4)string vs string builder vs string buffer
+5) what is immutability . Why string is immutable. 
+6)logical coding questions on string (you have to use inbuild methods of String class).
+5) fail safe vs fail fast collection.
+6) arraylist vs linkedlist
+7) concurrent hashmap uses
+8) random question on stream API ( most of the times they ask us to write code for filter and map methods)
+
+Spring boot related questions : 
+
+9) bean scopes. How can we change the scope of bean . 
+10) IOC container
+11) dependency injection and its types . 
+
+11) spring vs spring boot . 
+11) springboot advantages
+12) springboot annotations
+13) exception handling in spring boot. 
+14) junit testing with mockito ( just introductory ) - optionnal
+15) spring actuator (Introductory)
+16) transaction management
+
+17)  http codes 
+18) how to manage http request and response in spring boot .  http headers and body . (Theoretical knowledge is sufficient )
+
+
+Advanced questions : 
+
+1. How you have managed logs in your project . How to implement logger . 
+2. Swagger (it is optional . But you should have knowledge of it .)
+3. Deployment process . How and where your project was deployed (this question was asked to me lots of times) . Answer : I was not involved in deployment process in my project.  but if you have knowledge of depoymemt then you can explain it  . 
+
+4. Spring profiles - you should know this .
+
+Questions related to SQL query . 
+
+1) Should be familiar with DDL , DML commands 
+2) knowledge of  Joins required. 
+3) Indexing (optional) 
+4) mostly asked question - find 2nd highest salary .
+
+You can search on google for interview asked  SQL queries .
+
+
+Hello myself xyz . I am from address . I have completed my graduation in BE IT from abc University . Currently I am working for Organization Company name ,  Pune , where I am working as a software developer . I have total experience of 3 years and relevant experience of 2 yrs 9 months . I am working on a healthcare domain project where we have provided a  web application as a solution to our client . The main objective of the application is to implement the daily work processes , activities by using this application and reduce the use of paper works. It will boost the hospital functionality and provide growths in the business . 
+ In this project we have followed the layered architecture which includes front end + backend . 
+Front was developed using angular 8 and backend was developed by using spring boot , hibernate and my SQL DB .  At the backend side the web request will come from the browser and will be mapped at the web layer(controller layer )  by using rest endpoints . Then controller layer will communicate with the service layer for business logic and service layer will communicate with the database through repository layer . And at the last the response will be generated and returned from the controller layer  in the form of json with their corresponding Http status codes  .  This response will be consumed at the front end by using Angular . 
+This is all about the architecture of my project . 
+The technology stack which I worked on includes java 8 , spring boot framework , hibernate , my SQL , angular 8 .  That's all from my side . 
+
+
+
+
+Note : this self introduction is sufficient for getting placed .   But they can also ask additional questions on the projects too . So prepare 1 or 2 modules properly as a backup .

@@ -1,0 +1,57 @@
+Last Lecture
+1 RxJx Lib
+2 Subject
+3 BehaviouralSubject
+@Injectable({
+...
+})
+export class Notification {
+	notification=new BehaviouralSubject<string>('welcome');
+	
+	SendMessage(msg:strring){
+		this.notification.next(msg);
+	}
+}
+
+queyparamter.ts
+
+	onSend(msg){
+		this.service.SendMessage(msg);
+	}
+	
+notification.ts
+...	
+ngOninit(){
+	this.getdata()
+}
+	getdata(){
+		this.service.notification
+		.subscribe((data)=>{
+			this.msg=data;
+		})
+	}
+
+
+
+Today Lecture
+1 Overview Of bootstrap
+	- It is css freamwork
+	- it is predefined css readymade template
+	- it is easy to use for desigining purpose
+	- it is make ur application attratice as well as responsive
+2 Integration of bootstrap
+	1 online Integration
+		CDN Link =>
+		import in index.html
+	2 offline Integration
+		npm install bootstrap@4.6 --save
+3 basic grid system of bootstrap
+
+
+
+ 
+	
+	
+	
+
+
