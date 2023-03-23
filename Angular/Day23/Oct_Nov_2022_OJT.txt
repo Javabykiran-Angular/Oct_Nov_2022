@@ -1,0 +1,38 @@
+Last Lecturer
+1 Template driven form 
+	- it is a simple form => login,signup,f/b 
+	- all simple validation is done on view file 
+	
+	FormControl => 
+		- it is angular inbuild class 
+		1 valid =>true
+		2 invalid => true 
+		3 touched => true 
+		4 pristine => true 
+		5 drity   => true 
+		6 errors => it is object => u can call html attribute 
+			
+			
+		steps
+			1 to create a instance of FormControl class for that we have to use ngModel (without notation) u have use name attribute 
+			2 to create a template ref. variable & assign ngModel to temp ref variable
+			3 to perfrom validation with errors object then u have to use required attribute			
+	
+2 ngForm
+3 json
+		
+Today Lecture
+1 Continue TDF
+2 ngValue
+3 ngSubmit
+4 Regular Expression
+
+
+
+
+ 
+	
+	
+	
+
+
