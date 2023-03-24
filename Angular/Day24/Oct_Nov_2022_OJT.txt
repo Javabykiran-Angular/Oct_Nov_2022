@@ -1,0 +1,76 @@
+Last Lecturer
+1 Continue TDF
+2 ngValue
+3 ngSubmit
+4 Regular Expression
+
+Today Lecture
+1 Backend Project API
+	employee & country 
+	
+2 Login API 
+	db 
+	registration
+		1 Id => primary key => autoincrement
+		2 username => varchar=>50
+		3 password => varchar=>50
+		4 email Id => varchar=>500 => unique
+		5 mobile no => varchar=>20
+		6 gender  => varchar=>10
+		7 createdDate => date
+	entity class 
+	Registration.java
+		..
+	
+	class Controller{
+	
+		@PostMapping("/login")
+		public HashMap login(@RequestBody Registration reg){
+				
+			HashMap obj=service.login(reg);
+				return obj;
+		}
+		
+		service.java
+		
+		public HashMap login(Registration reg){
+			
+			Registration user= dao.login(reg);
+			
+				HashMap map =new HashMap();
+				
+			
+				if(user!=null){
+					map.put("msg","valid user")
+				}else{
+				map.put("msg","Invalid user")
+				}
+				map.put("user",user);				
+			
+			return map;
+			
+		}
+		dao.java
+		public Registration login(Registration reg){
+			//session open 
+			//.. to check data 
+			
+			// => uniqueResult 
+			
+			return user;
+			
+		}
+	
+	}
+	
+		 
+
+
+
+
+ 
+	
+	
+	
+
+
