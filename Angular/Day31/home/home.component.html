@@ -1,0 +1,66 @@
+
+<div class="container-fluid">
+    <app-header></app-header>
+<br>
+    <div class="row">
+        <div class="col">
+
+            <div>
+                <button class="btn btn-success" routerLink="/addemployee" >Add Employee</button> 
+                <button class="btn btn-warning" (click)="OnUpdate(popUp)" >Update Employee</button>
+            </div>
+            <br>
+
+            
+ <ng-template #popUp >
+    <app-updateemp [parentdata]="empobj"></app-updateemp>
+    <button class="btn btn-danger" (click)="modalRef.hide()"
+    style="margin-bottom: 8px;margin-right: 8px;">Cancel</button>
+</ng-template>
+
+            <div>
+               <table class="table table-bordered table-hover">
+               
+                <tr>
+                    <th>#</th>
+                    <th>Action</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                    <th>Creatated Date</th>
+                    <th>Creatated By</th>
+                    <th>Updatated Date</th>
+                    <th>Updatated By</th>
+                    <th>Country</th>
+
+                </tr>
+                <tbody>
+                    <tr *ngFor="let item of empdata;index as i">
+                        <td> {{i+1}} </td>
+                        <td><input type="radio" name="selectdata" (click)="onEdit(item)"></td>
+                        <td> <a [routerLink]="['/details',item.id]">{{item.name}} </a>  </td>
+                        <td> {{item.departmentit}} </td>
+                        <td> <h4><span [ngClass]="{
+                            'badge':true,
+                            'badge-pill':true,
+                            'badge-success':item.status.toLowerCase() === 'active',
+                            'badge-warning':item.status.toLowerCase() === 'inactive',
+                            'badge-danger':item.status.toLowerCase() === 'suspend'
+                        }" style="padding: 8px;" >{{item.status}}</span></h4>   </td>
+                        <td> {{item.createddtm | date }} </td>
+                        <td> {{item.createdby}} </td>
+                        <td> {{item.updateddtm | date:'dd-MM-yyyy'}} </td>
+                        <td> {{item.updatedby}} </td>
+                        <td> {{item.country.cname}} </td>
+                    </tr>
+                </tbody>
+            
+               </table> 
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
